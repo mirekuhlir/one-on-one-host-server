@@ -5,7 +5,6 @@ const peerServer = PeerServer({
     port: port, 
     path: "/",
     proxied: true,
-    allow_discovery: true,
     corsOptions: {
         origin: process.env.ALLOWED_ORIGIN
     }
