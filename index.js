@@ -20,4 +20,4 @@ peerServer.on('disconnect', (client) => {
     console.log('Client disconnected:', client.getId());
 });
 
-console.log(`PeerServer is running on port: ${port}`);
+console.log(`PeerServer is running on port: ${port} and allowed origin: ${process.env.ALLOWED_ORIGIN}`);
