@@ -6,6 +6,9 @@ const peerServer = PeerServer({
     path: "/",
     proxied: true,
     allow_discovery: true,
+    corsOptions: {
+        origin: process.env.ALLOWED_ORIGIN
+    }
 });
 
 // Add basic logging for connections
