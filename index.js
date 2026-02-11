@@ -8,7 +8,7 @@ PeerServer({
     path: "/",
     proxied: true,
     corsOptions: {
-        origin: allowedOrigins
+          origin: allowedOrigins.length === 1 ? allowedOrigins[0] : allowedOrigins
     }
 });
 
